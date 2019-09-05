@@ -1,0 +1,7 @@
+<h3>Add a new quotable author</h3>
+	<a [routerLink]="['/all-authors']">home</a>
+	<form>
+	    <input name="name"[(ngModel)]="new_author.name" placeholder="Enter Author Name"><br>
+	    <input name="quote"[(ngModel)]="new_author.quote" placeholder="Enter Quote">
+	    <button (click)="makeAuthor()">Add Author</button><br>
+	</form>

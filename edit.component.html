@@ -1,0 +1,9 @@
+<h3>Edit Author</h3>
+	<p>{{update_author.name}}</p>
+	<p>{{update_author.quote}}</p><br>
+	<a [routerLink]="['/all-authors']">home</a>
+	<form>
+	    <input name="name" [(ngModel)]="update_author.name" placeholder="Update Author Name"><br>
+	    <input name="quote" [(ngModel)]="update_author.quote" placeholder="Update Quote">
+	    <button (click)="updateOneAuthorFromService(update_author._id)">Update Author</button><br>
+	</form>
